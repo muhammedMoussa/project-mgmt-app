@@ -2,11 +2,15 @@ require('dotenv').config()
 const express = require('express')
 const {graphqlHTTP} = require('express-graphql')
 const bodyParser = require('body-parser');
+const colors = require('colors')
 
 const schema = require('./schema/schema')
+const connenctDB = require('./config/db')
 
 const port = process.env.PORT || 8000
+
 const app = express()
+connenctDB()
 
 app.use(bodyParser.json()); // application/json
 
