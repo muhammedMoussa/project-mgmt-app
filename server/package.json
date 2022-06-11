@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Muhammed Moussa",
@@ -22,5 +22,8 @@
     "express-graphql": "^0.12.0",
     "graphql": "^16.5.0",
     "mongoose": "^6.3.6"
+  },
+  "engines": {
+    "node": "14.18.2"
   }
 }
